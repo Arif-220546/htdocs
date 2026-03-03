@@ -36,6 +36,12 @@ git config --global user.name "username"
 
 
 
+
+
+
+
+
+
 ## 2 Repository setup commands
 
 
@@ -78,6 +84,9 @@ git clone --depth number repository-url
 ## purpose:Performs a shallow clone by downloading limited commit history to make cloning faster and lighter.
 **screenshot:**
 ![git depth](screenshots/command24.png)
+
+
+
 
 
 ## 3 repository status and information commands
@@ -183,49 +192,49 @@ syntax:
 git add filename
 purpose:Adds a specific file from working directory to staging area before committing.
 screenshot:
-![git add file](screenshots\command3_11.png)
+![git add file](screenshots/command41.png)
 
 commmand name: git add .
 syntax:
 git add .
 purpose:Adds all modified and new files in the current directory to the staging area.
 screenshot:
-![git add .](screenshots\command3_11.png)
+![git add .](screenshots/command42.png)
 
 commmand name: git add -p
 syntax:
 git add -p
 purpose:Allows staging changes interactively by selecting parts of modifications instead of the entire file.
 screenshot:
-![git add -p](screenshots\command3_11.png)
+![git add -p](screenshots/command43.png)
 
 commmand name: git restore
 syntax:
 git restore filename
 purpose:Discards changes in the working directory and restores file to last committed version.
 screenshot:
-![git restore](screenshots\command3_11.png)
+![git restore](screenshots/command44.png)
 
 commmand name: git restore --staged
 syntax:
 git restore --staged filename
 purpose:Removes a file from staging area without deleting changes in working directory.
 screenshot:
-![git restore --staged](screenshots\command3_11.png)
+![git restore --staged](screenshots/command45.png)
 
 commmand name: git rm
 syntax:
 git rm filename
 purpose:Removes a file from both working directory and Git tracking system.
 screenshot:
-![git rm](screenshots\command3_11.png)
+![git rm](screenshots/command46.png)
 
 commmand name: git mv
 syntax:
 git mv oldfilename newfilename
 purpose:Renames or moves a file while keeping Git history intact.
 screenshot:
-![git mv](screenshots\command3_11.png)
+![git mv](screenshots/command47.png)
 
 
 
@@ -242,7 +251,7 @@ git commit
 purpose:Creates a new commit with the staged changes.
 Opens the default text editor to write a commit message.
 screenshot:
-![git mv](screenshots\command3_11.png)
+![git commit](screenshots/command51.png)
 
 
 commmand name: git commit -m
@@ -251,7 +260,7 @@ git commit -m "commit message"
 purpose:Creates a commit with a message directly from the command line (without opening editor).
 This is the most commonly used commit command in industry.
 screenshot:
-![git mv](screenshots\command3_11.png)
+![git commit -m](screenshots/command52.png)
 
 
 commmand name: git commit --amend
@@ -261,7 +270,7 @@ purpose:Modifies the most recent commit.
 Add missed fil
 correct small mistakes
 screenshot:
-![git mv](screenshots\command3_11.png)
+![git commit --amend](screenshots/command53.png)
 
 
 commmand name: git commit --no-edit
@@ -270,4 +279,4 @@ git commit --amend --no-edit
 purpose:Amends the previous commit without changing the existing commit message.
 Useful when you forgot to add a file but message is correct.
 screenshot:
-![git mv](screenshots\command3_11.png)
+![git  commit --no --edit](screenshots/command54.png)
